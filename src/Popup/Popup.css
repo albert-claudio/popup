@@ -1,0 +1,50 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Poppins, sans-serif;
+}
+
+.video-button{
+    background-color: #40c2ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-button.disabled{
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: auto;
+    max-height: 480px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-video{
+    width: auto;
+    height: 480px;
+    object-fit: contain;
+}
+
+.popup-message{
+    display: none;
+}
+
+.popup.open .popup-message{
+    display: block;
+}
